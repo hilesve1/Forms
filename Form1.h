@@ -286,13 +286,11 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 		String^ a = textBox1->Text;
 		String^ arr = "0123456789";
-		//новый код
 		bool flag = false;
 		//
 		for (int i = 0; i < a->Length; i++) {
 			bool k = true;
 			for ( int j = 0; j < arr->Length; j++) {
-				//новый год уже не за горами
 				if (i != 0 &&  a[i] == ',' && flag == false) {
 					k = false;
 					flag = true;
@@ -305,7 +303,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 				}
 			}
 			if (k) {
-				MessageBox::Show("Неверные данные. Введите число");
+				MessageBox::Show("Неверные данные.");
 				break;
 			}
 		}
@@ -313,13 +311,12 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	String^ a = textBox2->Text;
 	String^ arr = "0123456789";
-	//новый код
 	bool flag = false;
 	//
 	for (int i = 0; i < a->Length; i++) {
 		bool k = true;
 		for (int j = 0; j < arr->Length; j++) {
-			//новый год уже не за горами
+
 			if (i != 0 && a[i] == ',' && flag == false) {
 				k = false;
 				flag = true;
@@ -332,7 +329,7 @@ private: System::Void textBox2_TextChanged(System::Object^ sender, System::Event
 			}
 		}
 		if (k) {
-			MessageBox::Show("Неверные данные. Введите число");
+			MessageBox::Show("Неверные данные.");
 			break;
 		}
 	}
@@ -362,13 +359,12 @@ private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void textBox3_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	String^ a = textBox3->Text;
 	String^ arr = "0123456789";
-	//новый код
 	bool flag = false;
 	//
 	for (int i = 0; i < a->Length; i++) {
 		bool k = true;
 		for (int j = 0; j < arr->Length; j++) {
-			//новый год уже не за горами
+			
 			if (i!=0 && a[i] == ',' && flag == false) {
 				k = false;
 				flag = true;
@@ -381,7 +377,7 @@ private: System::Void textBox3_TextChanged(System::Object^ sender, System::Event
 			}
 		}
 		if (k) {
-			MessageBox::Show("Неверные данные. Введите число");
+			MessageBox::Show("Неверные данные.");
 			break;
 		}
 	}
