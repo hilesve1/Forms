@@ -48,6 +48,24 @@ namespace MyProject {
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::ComponentModel::BackgroundWorker^ backgroundWorker1;
+	private: System::Windows::Forms::Button^ button2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	private: System::ComponentModel::IContainer^ components;
 
 
 
@@ -61,7 +79,7 @@ namespace MyProject {
 		/// <summary>
 		/// Обязательная переменная конструктора.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -83,6 +101,7 @@ namespace MyProject {
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->backgroundWorker1 = (gcnew System::ComponentModel::BackgroundWorker());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -95,7 +114,7 @@ namespace MyProject {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Segoe Print", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->label1->Location = System::Drawing::Point(30, 11);
+			this->label1->Location = System::Drawing::Point(154, 23);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(548, 84);
 			this->label1->TabIndex = 0;
@@ -213,7 +232,7 @@ namespace MyProject {
 			this->label7->AutoSize = true;
 			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 19.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label7->Location = System::Drawing::Point(30, 105);
+			this->label7->Location = System::Drawing::Point(30, 115);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(317, 38);
 			this->label7->TabIndex = 10;
@@ -229,13 +248,23 @@ namespace MyProject {
 			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
 			this->pictureBox1->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.ErrorImage")));
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(37, 157);
+			this->pictureBox1->Location = System::Drawing::Point(37, 170);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(295, 174);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox1->TabIndex = 11;
 			this->pictureBox1->TabStop = false;
 			this->pictureBox1->Click += gcnew System::EventHandler(this, &Form1::pictureBox1_Click);
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(22, 23);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(125, 54);
+			this->button2->TabIndex = 12;
+			this->button2->Text = L"Справка";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &Form1::button2_Click);
 			// 
 			// Form1
 			// 
@@ -244,6 +273,7 @@ namespace MyProject {
 			this->BackColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->ClientSize = System::Drawing::Size(738, 530);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->label6);
@@ -384,11 +414,22 @@ private: System::Void textBox3_TextChanged(System::Object^ sender, System::Event
 }
 private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
 }
+
 private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+
+
+
+
+
+private: System::Void contextMenuStrip1_Opening_1(System::Object^ sender, System::ComponentModel::CancelEventArgs^ e) {
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	MessageBox::Show("Данное приложение предназначено для вычисления площади параллелограмма\nДля вычисления введите длины сторон и угол между этими сторонами.\nДалее нажмите кнопку ответ, чтобы узнать площадь.");
 }
 };
 }

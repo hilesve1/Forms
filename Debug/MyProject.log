@@ -1,6 +1,4 @@
 ﻿  Form1.cpp
-  MyForm.cpp
-  Создание кода...
-C:\Users\user\Desktop\MyProjec1t\Form1.h(283,10): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\Desktop\MyProjec1t\Form1.h(313,10): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
   Form1.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   MyProject.vcxproj -> C:\Users\user\Desktop\MyProjec1t\Debug\MyProject.exe
